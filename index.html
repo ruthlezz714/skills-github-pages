@@ -1,0 +1,149 @@
+---
+layout: null
+title: Learning Journey
+description: Portfólio de estudos, projetos e certificações em tecnologia.
+---
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Minha jornada de aprendizado em tecnologia: estudos, projetos, laboratórios e certificações.">
+  <meta name="theme-color" content="#f7f8fa">
+  <title>Learning Journey — ruthlezz714</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Voltar ao início">
+        <span class="brand-mark">RL</span>
+        <span>learning<span class="brand-dot">.</span>journey</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#estudos">Estudos</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#projetos">Projetos</a>
+        <a class="nav-contact" href="https://github.com/ruthlezz714" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> DOCUMENTANDO A EVOLUÇÃO</p>
+          <h1>Aprender.<br><span>Praticar.</span><br>Compartilhar.</h1>
+          <p class="hero-text">Um espaço para registrar minha jornada em tecnologia, transformar conhecimento em prática e acompanhar cada etapa da minha evolução.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#estudos">Explorar minha jornada <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="https://github.com/ruthlezz714" target="_blank" rel="noreferrer">Visitar GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-meta">
+            <span><span class="meta-icon">⌘</span> Application Security</span>
+            <span><span class="meta-icon">⌁</span> Tecnologia & Infraestrutura</span>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Resumo do portfólio">
+          <div class="card-topline"><span>LEARNING LOG</span><span class="live-indicator">● ATIVO</span></div>
+          <div class="profile-row">
+            <div class="avatar">RL</div>
+            <div><strong>ruthlezz714</strong><small>Estudante de tecnologia</small></div>
+          </div>
+          <div class="hero-card-divider"></div>
+          <p class="mini-label">ÁREAS DE INTERESSE</p>
+          <div class="tag-list">
+            <span>AppSec</span><span>Cybersecurity</span><span>Redes</span><span>Cloud</span>
+          </div>
+          <div class="hero-card-footer">
+            <span>Uma etapa de cada vez.</span>
+            <span class="sparkle">✳</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div class="stat"><strong id="stat-certificates">0</strong><span>Certificados</span></div>
+        <div class="stat"><strong id="stat-projects">0</strong><span>Projetos</span></div>
+        <div class="stat"><strong id="stat-labs">0</strong><span>Laboratórios</span></div>
+        <div class="stat"><strong id="stat-topics">0</strong><span>Tópicos estudados</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">01 / SOBRE</p>
+          <h2>Conhecimento que<br><span>vira prática.</span></h2>
+        </div>
+        <div class="section-intro">
+          <p>Este site funciona como meu registro público de aprendizado. Aqui reúno cursos, certificações, anotações de estudo, laboratórios e projetos desenvolvidos ao longo da minha trajetória.</p>
+          <p>Mais do que listar conteúdos concluídos, quero mostrar como estou construindo conhecimento: estudando fundamentos, praticando e documentando o processo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="estudos">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">02 / APRENDIZADO</p><h2>Trilha de <span>estudos.</span></h2></div>
+          <p class="heading-note">Temas que estou explorando e desenvolvendo.</p>
+        </div>
+        <div class="learning-grid" id="learning-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="certificados">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">03 / CONQUISTAS</p><h2>Certificados<span>.</span></h2></div>
+          <p class="heading-note">Cursos, formações e certificações concluídas.</p>
+        </div>
+        <div class="filter-row">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="certificate-search" type="search" placeholder="Buscar certificado..." aria-label="Buscar certificado"></label>
+          <span class="results-count" id="certificate-count">0 registros</span>
+        </div>
+        <div class="certificate-grid" id="certificate-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="projetos">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">04 / APLICAÇÃO</p><h2>Projetos & <span>prática.</span></h2></div>
+          <p class="heading-note">Experimentos, laboratórios e projetos pessoais.</p>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <section class="section closing-section">
+      <div class="container closing-card">
+        <div><p class="eyebrow">EM CONSTANTE CONSTRUÇÃO</p><h2>O progresso acontece<br><span>um commit por vez.</span></h2></div>
+        <a class="button button-light" href="https://github.com/ruthlezz714" target="_blank" rel="noreferrer">Acompanhar no GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <span>© <span id="current-year"></span> ruthlezz714 · Learning Journey</span>
+      <span>Feito com curiosidade e consistência.</span>
+    </div>
+  </footer>
+</body>
+</html>
